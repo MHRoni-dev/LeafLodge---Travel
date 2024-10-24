@@ -52,8 +52,17 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
-  		}
+  			},
+        green: {
+          template: '#2D5D35'
+        },
+        gray: {
+          template: '#E6E6E6'
+        }
+  		},
+      fontFamily: {
+        prompt:  'Prompt, sans-serif'
+      }
   	}
   },
   plugins: [import("tailwindcss-animate")],

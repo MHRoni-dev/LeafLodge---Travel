@@ -1,9 +1,10 @@
+import Header from '@/components/Header';
 
 function App() {
 
   return (
-    <div>
-      basic setup
+    <div className='font-prompt'>
+      <Header />
     </div>
   )
 }
