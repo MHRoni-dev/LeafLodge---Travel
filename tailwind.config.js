@@ -54,7 +54,8 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			},
         green: {
-          template: '#2D5D35'
+          template: '#2D5D35',
+          light: '#AFD4B5'
         },
         gray: {
           template: '#E6E6E6'
