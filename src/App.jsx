@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import WelcomeSection from '@/components/WelcomeSection';
 import FeatureSection from '@/components/FeatureSection';
+import MoreSection from '@/components/MoreSection';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <WelcomeSection />
       <FeatureSection />
+      <MoreSection />
     </div>
   )
 }
