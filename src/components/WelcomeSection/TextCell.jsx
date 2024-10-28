@@ -1,8 +1,13 @@
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 
-export function TextCell({children, className}) {
+export function TextCell({children, direction, className}) {
   return (
-    <div className={cn('w-full h-full flex flex-col justify-center items-center bg-green-light gap-8', className)}>{children}</div>
+    <div className='overflow-hidden'>
+        <motion.div className={cn('w-full h-full flex flex-col justify-center items-center bg-green-light gap-8', className)}
+           initial={{translateX : direction === 'left' ? '-100%' : '100%'}} whileInView={{translateX : 0}} transition={{duration: 0.75}}
+      >{children}</motion.div>
+    </div>
   )
 }
 
