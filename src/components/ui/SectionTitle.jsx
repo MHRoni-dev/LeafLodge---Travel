@@ -1,7 +1,9 @@
-import { cn } from '@/lib/utils';
+import { cn, getTailwindColors } from '@/lib/utils';
+import { motion } from 'framer-motion';
 
 export default function SectionTitle({title, className}) {
+  const tailwindColors = getTailwindColors()
   return (
-    <h4 className={cn('text-5xl text-center text-black', className)}>{title}</h4>
+    <motion.h4 className={cn('text-5xl text-center text-black', className)} whileHover={{color : tailwindColors.green['template']}}>{title}</motion.h4>
   )
 }
