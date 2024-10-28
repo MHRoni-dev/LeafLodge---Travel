@@ -9,33 +9,33 @@ export default function Footer() {
             <div className='flex flex-col gap-2'>
                 <h6 className='text-2xl'>Social media</h6>
                 <div className='flex items-center gap-3 mt-1'>
-                  <img src={twitter} alt="" />
-                  <img src={facebook } alt="" />
-                  <img src={instragram} alt="" />
+                  <img src={twitter} alt="" className='hover:scale-105 cursor-pointer'/>
+                  <img src={facebook } alt="" className='hover:scale-105 cursor-pointer'/>
+                  <img src={instragram} alt="" className='hover:scale-105 cursor-pointer'/>
                 </div>
             </div>
             <div className='flex flex-col gap-2'>
               <h6 className='text-2xl '>Company</h6>
               <div className='flex flex-col gap-1'>
-                  <p>About Us</p>
-                  <p>Career Opportunity</p>
-                  <p>Global Brands</p>
-                  <p>Hotel Development</p>
-                  <p>Need Help?</p>
+                  <p className='hover:underline cursor-pointer'>About Us</p>
+                  <p className='hover:underline cursor-pointer'>Career Opportunity</p>
+                  <p className='hover:underline cursor-pointer'>Global Brands</p>
+                  <p className='hover:underline cursor-pointer'>Hotel Development</p>
+                  <p className='hover:underline cursor-pointer'>Need Help?</p>
               </div>
             </div><div className='flex flex-col gap-2'>
               <h6 className='text-2xl '>Services</h6>
               <div className='flex flex-col gap-1'>
-                  <p>Explore Hotels</p>
-                  <p>Career Opportunity</p>
+                  <p className='hover:underline cursor-pointer'>Explore Hotels</p>
+                  <p className='hover:underline cursor-pointer'>Career Opportunity</p>
               </div>
             </div><div className='flex flex-col gap-2'>
               <h6 className='text-2xl '>Information</h6>
               <div className='flex flex-col gap-1'>
-                  <p>Terms of Use</p>
-                  <p>Privacy and Cookie Center</p>
-                  <p>Do Not Sell or Share My Personal Information</p>
-                  <p>Site Map</p>
+                  <p className='hover:underline cursor-pointer'>Terms of Use</p>
+                  <p className='hover:underline cursor-pointer'>Privacy and Cookie Center</p>
+                  <p className='hover:underline cursor-pointer'>Do Not Sell or Share My Personal Information</p>
+                  <p className='hover:underline cursor-pointer'>Site Map</p>
               </div>
             </div>
         </div>
