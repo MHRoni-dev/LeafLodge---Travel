@@ -4,8 +4,8 @@ import instragram from '@/assets/instragram.png'
 
 export default function Footer() {
   return (
-    <footer className='bg-green-light px-28 py-24'>
-        <div className='grid grid-cols-4'>
+    <footer className='bg-green-light px-8 lg:px-28 py-24 mt-20 lg:mt-0 mx-auto w-full flex justify-center items-center'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-8 container'>
             <div className='flex flex-col gap-2'>
                 <h6 className='text-2xl'>Social media</h6>
                 <div className='flex items-center gap-3 mt-1'>
@@ -14,7 +14,7 @@ export default function Footer() {
                   <img src={instragram} alt="" className='hover:scale-105 cursor-pointer'/>
                 </div>
             </div>
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 '>
               <h6 className='text-2xl '>Company</h6>
               <div className='flex flex-col gap-1'>
                   <p className='hover:underline cursor-pointer'>About Us</p>
@@ -23,20 +23,22 @@ export default function Footer() {
                   <p className='hover:underline cursor-pointer'>Hotel Development</p>
                   <p className='hover:underline cursor-pointer'>Need Help?</p>
               </div>
-            </div><div className='flex flex-col gap-2'>
+            </div>
+            <div className='flex flex-col gap-2'>
               <h6 className='text-2xl '>Services</h6>
               <div className='flex flex-col gap-1'>
                   <p className='hover:underline cursor-pointer'>Explore Hotels</p>
                   <p className='hover:underline cursor-pointer'>Career Opportunity</p>
               </div>
-            </div><div className='flex flex-col gap-2'>
-              <h6 className='text-2xl '>Information</h6>
-              <div className='flex flex-col gap-1'>
-                  <p className='hover:underline cursor-pointer'>Terms of Use</p>
-                  <p className='hover:underline cursor-pointer'>Privacy and Cookie Center</p>
-                  <p className='hover:underline cursor-pointer'>Do Not Sell or Share My Personal Information</p>
-                  <p className='hover:underline cursor-pointer'>Site Map</p>
-              </div>
+            </div>
+            <div className='flex flex-col gap-2 sm:w-full'>
+                <h6 className='text-2xl'>Information</h6>
+                <div className='flex flex-col gap-1'>
+                    <p className='hover:underline cursor-pointer'>Terms of Use</p>
+                    <p className='hover:underline cursor-pointer'>Privacy and Cookie Center</p>
+                    <p className='hover:underline cursor-pointer'>Do Not Sell or Share My Personal Information</p>
+                    <p className='hover:underline cursor-pointer'>Site Map</p>
+                </div>
             </div>
         </div>
     </footer>
